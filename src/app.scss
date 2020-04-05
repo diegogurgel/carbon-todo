@@ -1,0 +1,12 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+$feature-flags: (
+  grid-columns-16: true,
+);
+.add-task-button {
+  margin-left: $spacing-04;
+}
+.task-container {
+  margin-top: $spacing-04;
+  color: #fff;
+}

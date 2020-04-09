@@ -1,12 +1,23 @@
-@import 'carbon-components/scss/globals/scss/styles.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
 
 $feature-flags: (
   grid-columns-16: true,
 );
+.app-title {
+  @include carbon--type-style('productive-heading-04');
+  margin: $spacing-06;
+}
+.app-container {
+  padding: $spacing-04;
+}
 .add-task-button {
   margin-left: $spacing-04;
 }
 .task-container {
-  margin-top: $spacing-04;
   color: #fff;
+}
+.bx--data-table-container {
+  width: 100%;
+  margin-top: $spacing-06;
 }

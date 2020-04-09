@@ -5,7 +5,10 @@ export const taskReducer = (state = {}, action) => {
     case taskActions.ADD_TASK:
       return {
         ...state,
-        [Object.keys(state).length]: action.payload,
+        [Object.keys(state).length]: {
+          id: Object.keys(state).length,
+          description: action.payload,
+        },
       };
     default:
       return state;
